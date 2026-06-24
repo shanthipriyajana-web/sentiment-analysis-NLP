@@ -1,93 +1,112 @@
 # Sentiment Analysis System – NLP Text Classifier
 
-> Automatically classifies text reviews as **Positive**, **Negative**, or **Neutral**  
-> using Natural Language Processing (NLP) and Machine Learning.
+> Automatically classifies text reviews as **Positive**, **Negative**, or **Neutral** using Natural Language Processing (NLP) and Machine Learning.
 
 ---
 
 ## What This Project Does
 
-Ever wondered how companies like Amazon or Flipkart understand thousands of customer reviews at once?  
-This project does exactly that — it reads a piece of text and tells you whether the sentiment is positive, negative, or neutral, **automatically**.
+This project analyzes text reviews and automatically predicts whether the sentiment expressed is **Positive**, **Negative**, or **Neutral**.
+
+It demonstrates the complete NLP workflow, including text preprocessing, feature extraction, machine learning model training, evaluation, and sentiment prediction.
+
+---
+
+## Screenshots
+
+### Dashboard View
+
+![Dashboard](sentiment_analysis_dashboard.png)
+
+### Results View
+
+![Results](sentiment_analysis_Dashboard_results.png)
 
 ---
 
 ## Tech Stack
 
-| Category       | Tools Used                              |
-|----------------|-----------------------------------------|
-| Language       | Python 3.x                              |
-| NLP            | NLTK (tokenisation, stopwords, stemming)|
-| Features       | TF-IDF Vectorizer (Scikit-learn)        |
-| ML Models      | Logistic Regression, Naive Bayes, SVM   |
-| Evaluation     | Accuracy, Precision, Recall, F1-Score   |
-| Visualisation  | Matplotlib                              |
-| Data Handling  | Pandas, NumPy                           |
+| Category           | Tools Used                            |
+| ------------------ | ------------------------------------- |
+| Language           | Python 3.x                            |
+| NLP                | NLTK                                  |
+| Feature Extraction | TF-IDF Vectorizer                     |
+| Machine Learning   | Logistic Regression, Naive Bayes, SVM |
+| Data Handling      | Pandas, NumPy                         |
+| Visualization      | Matplotlib                            |
+| Version Control    | Git & GitHub                          |
 
 ---
 
-## How It Works (Step by Step)
+## Key Features
 
-```
+* Sentiment Classification (Positive, Negative, Neutral)
+* Text Preprocessing using NLTK
+* TF-IDF Feature Extraction
+* Multiple Machine Learning Models Comparison
+* Performance Evaluation Metrics
+* Interactive Dashboard Interface
+* Real-Time Sentiment Prediction
+
+---
+
+## How It Works
+
+```text
 Raw Text Review
       │
       ▼
-1. Preprocessing
-   - Lowercase conversion
-   - Tokenisation (split into words)
-   - Stopword removal (remove "the", "is", "a" etc.)
-   - Stemming (e.g. "running" → "run")
+Text Preprocessing
       │
       ▼
-2. Feature Extraction
-   - TF-IDF Vectorizer converts text into numbers
-   - Uses unigrams + bigrams (1–2 word combinations)
+TF-IDF Feature Extraction
       │
       ▼
-3. Model Training
-   - Logistic Regression
-   - Naive Bayes
-   - SVM (LinearSVC)
-   - Best model selected based on accuracy
+Model Training
+(Logistic Regression, Naive Bayes, SVM)
       │
       ▼
-4. Prediction & Evaluation
-   - Accuracy, Precision, Recall, F1-Score
-   - Confusion Matrix
+Model Evaluation
       │
       ▼
-5. Output: Positive / Negative / Neutral
+Sentiment Prediction
+(Positive / Negative / Neutral)
 ```
 
 ---
 
 ## Project Structure
 
-```
-sentiment-analysis-nlp/
+```text
+sentiment-analysis-NLP/
 │
-├── sentiment_analysis.py       # Main source code
+├── index.html
+├── sentiment_analysis.py
+├── sentiment_analysis_dashboard.png
+├── sentiment_analysis_Dashboard_results.png
 ├── sentiment_analysis_results.png
-├── sentiment_analysis_Dashboard.png
-└── README.md                   # This file
+└── README.md
 ```
 
 ---
 
-## Setup & Run
+## Installation & Usage
 
-### 1. Clone the repository
+### Clone Repository
+
 ```bash
-git clone https://github.com/shanthipriyajana/sentiment-analysis-nlp.git
-cd sentiment-analysis-nlp
+git clone https://github.com/shanthipriyajana-web/sentiment-analysis-NLP.git
+cd sentiment-analysis-NLP
 ```
 
-### 2. Install dependencies
+### Install Dependencies
+
 ```bash
 pip install numpy pandas matplotlib scikit-learn nltk
 ```
 
-### 3. Run the project
+### Run Project
+
 ```bash
 python sentiment_analysis.py
 ```
@@ -96,37 +115,65 @@ python sentiment_analysis.py
 
 ## Sample Output
 
-```
+```text
 Model                     Accuracy
 -----------------------------------------
 Logistic Regression         87.50%
 Naive Bayes                 75.00%
 SVM (LinearSVC)             87.50%
 -----------------------------------------
-Best model : Logistic Regression (87.50%)
+Best Model : Logistic Regression
 
-Live Prediction Demo
-===========================================
-✅ [Positive]  This is the best thing I have ever bought!
-❌ [Negative]  Complete waste of money, very disappointed.
-➖ [Neutral  ]  It works fine, nothing special about it.
+Positive : This is the best product I have ever used.
+Negative : Complete waste of money.
+Neutral  : It works as expected.
 ```
+
+---
+
+## Skills Demonstrated
+
+* Python Programming
+* Natural Language Processing (NLP)
+* Machine Learning
+* Scikit-Learn
+* NLTK
+* Data Analysis
+* Feature Engineering
+* Model Evaluation
+* Data Visualization
+* Git & GitHub
 
 ---
 
 ## What I Learned
 
-- Text preprocessing using NLTK (tokenisation, stopwords, stemming)
-- Converting text to numerical features using TF-IDF
-- Training and comparing multiple ML classifiers
-- Evaluating models using classification metrics
-- Visualising results with Matplotlib
+* Text preprocessing using NLTK
+* Tokenization and Stopword Removal
+* Stemming Techniques
+* TF-IDF Feature Extraction
+* Machine Learning Model Training
+* Classification Metrics Evaluation
+* Data Visualization with Matplotlib
+
+---
+
+## Future Enhancements
+
+* Deploy using Flask or FastAPI
+* Add Deep Learning Models (LSTM/BERT)
+* Build REST APIs for Predictions
+* Support Multiple Languages
+* Improve Model Accuracy with Larger Datasets
 
 ---
 
 ## Author
 
-**Shanthipriya Jana**  
-MCA Student | Python Developer | AI/ML Enthusiast  
-📧 shanthipriyajana@gmail.com  
-🔗 [linkedin.com/in/shanthipriya-jana](https://www.linkedin.com/in/shanthipriya-jana-8629b6398/?trk=opento_sprofile_pfeditor)
+**Shanthipriya Jana**
+
+MCA Graduate | Python Developer | AI/ML Enthusiast
+
+📧 [shanthipriyajana@gmail.com](mailto:shanthipriyajana@gmail.com)
+
+🔗 LinkedIn: https://www.linkedin.com/in/shanthipriya-jana-8629b6398/
