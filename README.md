@@ -128,4 +128,4 @@ Live Prediction Demo
 **Shanthipriya Jana**  
 MCA Student | Python Developer | AI/ML Enthusiast  
 📧 shanthipriyajana@gmail.com  
-🔗 [linkedin.com/in/shanthipriya-jana](https://linkedin.com/in/shanthipriya-jana)
+🔗 [linkedin.com/in/shanthipriya-jana](https://www.linkedin.com/in/shanthipriya-jana-8629b6398/?trk=opento_sprofile_pfeditor)
