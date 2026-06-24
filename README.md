@@ -67,7 +67,8 @@ Raw Text Review
 sentiment-analysis-nlp/
 │
 ├── sentiment_analysis.py       # Main source code
-├── sentiment_analysis_results.png  # Generated charts (auto-created on run)
+├── sentiment_analysis_results.png
+├── sentiment_analysis_Dashboard.png
 └── README.md                   # This file
 ```
 
